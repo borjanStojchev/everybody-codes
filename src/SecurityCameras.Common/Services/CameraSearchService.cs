@@ -29,9 +29,12 @@ public class CameraSearchService : ICameraSearchService
         {
             return cameras;
         }
-        
+
+        var normalizedSearchTerm = searchTerm.Replace(',', '.');
         var results = cameras
-            .Where(c => c.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+            .Where(c => c.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) || 
+                        c.Lat.ToString().Replace(',','.').Contains(normalizedSearchTerm) || 
+                        c.Lon.ToString().Replace(',','.').Contains(normalizedSearchTerm))
             .OrderBy(c => c.Number);
 
         return results;
