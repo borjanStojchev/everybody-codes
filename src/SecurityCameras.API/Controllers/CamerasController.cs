@@ -23,7 +23,7 @@ public class CamerasController : ControllerBase
     }
     
     [HttpGet("Search")]
-    public async Task<IActionResult> SearchCameras(string name)
+    public async Task<IActionResult> SearchCameras(string name = "")
     {
         var cityAverages = await _cameraSearchService.SearchCamerasAsync(name);
         return Ok(cityAverages);

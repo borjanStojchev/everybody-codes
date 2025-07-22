@@ -1,6 +1,7 @@
 <body>
   <h1>Security cameras Utrecht</h1>
-   <leaflet-map [cameras]="allCameras"/>
+  <search (resultsFound)="onSearchResults($event)"></search>
+  <leaflet-map [cameras]="allCameras"/>
   <div id="source">
     source:
     <a href="https://data.overheid.nl/dataset/camera-s">https://data.overheid.nl/dataset/camera-s</a>
