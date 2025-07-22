@@ -1,0 +1,12 @@
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/bin/Release/net9.0/SecurityCameras.Common.deps.json
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/bin/Release/net9.0/SecurityCameras.Common.dll
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/bin/Release/net9.0/SecurityCameras.Common.pdb
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.AssemblyInfoInputs.cache
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.AssemblyInfo.cs
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.csproj.CoreCompileInputs.cache
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.sourcelink.json
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.dll
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/refint/SecurityCameras.Common.dll
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/SecurityCameras.Common.pdb
+/Users/borjanstojchev/Documents/projects/iChoosr/everybody-codes/src/SecurityCameras.Common/obj/Release/net9.0/ref/SecurityCameras.Common.dll

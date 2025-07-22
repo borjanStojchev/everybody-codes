@@ -1,0 +1,28 @@
+<body>
+  <h1>Security cameras Utrecht</h1>
+   <leaflet-map [cameras]="allCameras"/>
+  <div id="source">
+    source:
+    <a href="https://data.overheid.nl/dataset/camera-s">https://data.overheid.nl/dataset/camera-s</a>
+  </div>
+  <main>
+    <table id="cameraTableContainer">
+      <tbody>
+        <tr>
+          <td>
+            <camera-table id="column3" [title]="'Cameras 3'" [cameras]="cameras3"></camera-table>
+          </td>
+          <td>
+            <camera-table id="column5" [title]="'Cameras 5'" [cameras]="cameras5"></camera-table>
+          </td>
+          <td>
+            <camera-table id="column15" [title]="'Cameras 3 & 5'" [cameras]="cameras3and5"></camera-table>
+          </td>
+          <td>
+            <camera-table id="columnOther" [title]="'Cameras Overig'" [cameras]="otherCameras"></camera-table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>

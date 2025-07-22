@@ -1,0 +1,21 @@
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">{{ title }}</th>
+    </tr>
+    <tr>
+      <th>Number</th>
+      <th>Name</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cam of cameras">
+      <td>{{ cam.number }}</td>
+      <td>{{ cam.name }}</td>
+      <td>{{ cam.lat }}</td>
+      <td>{{ cam.lon }}</td>
+    </tr>
+  </tbody>
+</table>
