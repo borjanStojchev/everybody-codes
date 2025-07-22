@@ -6,6 +6,10 @@ This repository contains a full-stack solution for viewing and searching securit
 - 🌐 A **.NET 9 Web API** that exposes camera data retrieved from a CSV file.
 - 🗺️ An **Angular Web application** that displays cameras on a map and distributes them based on predefined rules.
 
+## Search Functionality in Angular App
+- The Angular frontend provides a user interface to perform searches
+- Input field with debounce to limit request frequency
+- Map updates dynamically to show search results
 ---
 
 ## 📁 Project Structure
