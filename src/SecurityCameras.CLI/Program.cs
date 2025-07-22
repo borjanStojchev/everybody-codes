@@ -9,7 +9,7 @@ using SecurityCameras.Common.Services;
 
 var builder = CoconaApp.CreateBuilder();
 builder.Services.AddMemoryCache();
-builder.Services.AddSingleton<ICsvDataService, CsvDataDataService>();
+builder.Services.AddSingleton<ICsvDataService, CsvDataService>();
 builder.Services.AddSingleton<ICameraSearchService, CameraSearchService>();
 builder.Services.AddSingleton<IOutputFormatter, OutputFormatter>();
 

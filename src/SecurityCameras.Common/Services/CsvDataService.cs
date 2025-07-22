@@ -5,25 +5,30 @@ using SecurityCameras.Common.Models;
 
 namespace SecurityCameras.Common.Services;
 
-public class CsvDataDataService : ICsvDataService
+public class CsvDataService : ICsvDataService
 {
     public async Task<List<Camera>> ExtractCameras(string csvFilePath)
     {
-        var cameras = new List<Camera>();
         if (!File.Exists(csvFilePath))
         {
             Console.WriteLine("Csv data file not found.");
-            return cameras;
+            return new List<Camera>();
         }
         
         var lines = await File.ReadAllLinesAsync(csvFilePath);
         if (lines == null || lines.Length == 0)
         {
             Console.WriteLine("Empty data file.");
-            return cameras;
+            return new List<Camera>();
         }
-        var dataLines = lines.Skip(1);
+        
+        return ParseCsvLines(lines);
+    }
 
+    public List<Camera> ParseCsvLines(IEnumerable<string> lines)
+    {
+        var dataLines = lines.Skip(1);
+        var cameras = new List<Camera>();
         foreach (var line in dataLines)
         {
             var parts = line.Split(';');

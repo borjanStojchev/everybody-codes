@@ -20,7 +20,7 @@ public class Program
             });
         });
         builder.Services.AddMemoryCache();
-        builder.Services.AddSingleton<ICsvDataService, CsvDataDataService>();
+        builder.Services.AddSingleton<ICsvDataService, CsvDataService>();
         builder.Services.AddSingleton<ICameraSearchService, CameraSearchService>();
 
         builder.Services.AddControllers();

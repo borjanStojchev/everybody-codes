@@ -78,3 +78,44 @@ The solution was built with modularity and clarity in mind, following these step
      - Divisible by 5 → Second column  
      - Divisible by both → Third column  
      - None of the above → Last column
+
+## ✅ Unit Tests
+
+Unit tests are implemented using [xUnit](https://xunit.net/) and [Moq](https://github.com/moq/moq4). The tests cover core functionalities including CSV parsing, camera searching, and caching behavior.
+
+### 🔍 Tested Components
+
+#### `CsvDataServiceTests`
+Tests parsing logic for extracting camera data from raw CSV lines:
+
+- ✅ `ParseCsvLines_ValidLines_ReturnsCameras`  
+  Ensures valid CSV lines are parsed into camera objects correctly.
+
+- ✅ `ParseCsvLines_InvalidLines`  
+  Verifies that malformed or non-numeric lines are skipped.
+
+- ✅ `ParseCsvLines_InvalidLine_SkipsIt`  
+  Confirms that partially valid input returns only valid camera entries.
+
+#### `CameraSearchServiceTests`
+Tests camera search logic, including integration with caching and data filtering:
+
+- ✅ `SearchCamerasAsync_WithEmptySearchTerm_ReturnsAllCameras`  
+  Returns the full camera list when the search term is empty.
+
+- ✅ `SearchCamerasAsync_WithMatchingName_ReturnsFilteredCameras`  
+  Filters results by camera name containing the search term.
+
+- ✅ `SearchCamerasAsync_WithLatitudeMatch_ReturnsCamera`  
+  Matches camera by latitude, supporting both `.` and `,` decimal formats.
+
+- ✅ `GetAllCamerasAsync_CachesResult_AfterFirstCall`  
+  Validates that results are cached after the first read from CSV.
+
+### 🧪 How to Run Tests
+
+From the root of the solution:
+
+```bash
+dotnet test
+```
